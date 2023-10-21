@@ -1,2 +1,8 @@
 name: crackdetectionCICD
-on: []
+on:
+  issues:
+    types: [opened]
+jobs:
+  run_ml_code:
+    name: runmlcode
+      runs-on: ubuntu-latest
